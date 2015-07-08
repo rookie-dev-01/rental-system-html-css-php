@@ -1,0 +1,122 @@
+/********** < Navigation */
+.nav-container { float:left; background: #186C94; margin: 10em 0; width: 960px; }
+#nav { border: 0px none; padding:0; margin:0; font-size:13px; }
+
+/* All Levels */
+#nav li { text-align:left; position:relative; }
+#nav li.over { z-index:999; }
+#nav li.parent {line-height: 26px; border-right: solid 1px #60b7f2; padding: 0 0 0 12px;}
+#nav li:hover {background-color: #da7532;}
+#nav li.more-category ul {margin-left: -251px;}
+#nav li.more-category ul.mm-1 {margin-left:0}
+#nav li a { display:block; text-decoration:none; color: #fff; outline: 0; padding: 7px 15px 7px 37px; text-align: center;letter-spacing: 0; font-family: 'Tahoma', BebasNeueRegular, Arial, sans-serif; font-size: 15px; font-weight: normal; border-right: 1px solid #1b79bf;}
+#nav li.more-category {border-right: none; position: relative;}
+#nav li.more-category a {border-right: none;
+padding-left: 0px;}
+#nav li ul li a { padding: 6px 0;}
+#nav li a:hover { text-decoration:none }
+#nav li a span { display:block; white-space:nowrap; cursor:pointer; }
+#nav li ul a span { white-space:normal; }
+
+/* 1st Level */
+#nav li { float:left; }
+#nav li a {  }
+#nav li a:hover { color: #fff; text-shadow: 1px 1px 3px #ccc; }
+#nav li.over a,
+#nav li.active a { color:#fff; }
+
+/* 2nd Level */
+#nav ul { position:absolute; width:15em; top:40px; left:-10000px; background:#da7532; padding: 10px; }
+#nav ul div.col { float:left; width: 15em; }
+#nav ul li { float:left; padding: 0; width: 15em; border-bottom: solid 1px #c9611c; font-size: 12px;
+line-height: 24px; margin-left: 7px;}
+#nav ul li.last, #nav ul li.Security {border-bottom: none;}
+#nav ul li a { float:none; padding:6px 9px; font-weight:normal; color:#FFF !important; border-right: none; font-size: 12px;
+text-align: left;}
+#nav ul li a:hover { color:#fff !important;}
+#nav ul li.last > a { border-bottom:0; }
+#nav ul li.last.parent > a { border-bottom:0; }
+
+#nav ul li.over > a  { font-weight:normal; color:#fff !important; background: #104A65; }
+#nav ul.mm-1 { width: 15em; }
+#nav ul.mm-2 { width: 29em; }
+#nav ul.mm-3 { width: 45em; }
+#nav ul.mm-4 { width: 60em; }
+/* 3rd+ leven */
+#nav ul ul { top:-6px; background: #104A65; }
+
+/* Show Menu - uses built-in magento menu hovering */
+#nav li.over > ul { left:0; }
+#nav li.over > ul li.over > ul { left:14em; }
+#nav li.over ul ul { left:-10000px; }
+
+/* Show Menu - uses css only, not fully across all browsers but, for the purpose of the demo is fine by me */
+#nav li:hover > ul { left:0; z-index: 1000; }
+#nav li:hover > ul li:hover > ul { left:14em; z-index: 200; }
+#nav li:hover ul ul { left:-10000px; }
+
+#nav li ul li a {
+	background: none;
+}
+
+#nav li.Audio ul {width: 16.4em !important;}
+#nav li.Audio ul li {width: 16.4em !important;}
+#nav li.Baby ul {width: 18.3em !important;}
+#nav li.Baby ul li {width: 18.3em !important;}
+#nav li.Bikes ul {width: 13.9em !important;}
+#nav li.Bikes ul li {width: 13.9em !important;}
+#nav li.Costumes ul {width: 16em !important;}
+#nav li.Costumes ul li {width: 16em !important;}
+
+.menu li.Adventure a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left 2px;	
+}
+.menu li.Appliances a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -39px;	
+}
+.menu li.Audio a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -79px;	
+}
+.menu li.Baby a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -118px;	
+}
+.menu li.Bikes a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -158px;	
+}
+.menu li.Cameras a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -198px;	
+}
+.menu li.Costumes a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -238px;	
+}
+.menu li.Furniture a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -278px;	
+}
+.menu li.Computers a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -317px;	
+}
+.menu li.Musical a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -358px;	
+}
+.menu li.Communication a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -400px;	
+}
+.menu li.Event a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -480px;	
+}
+.menu li.Medical a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -520px;
+}
+.menu li.Office a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -560px;
+}
+.menu li.Security a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -600px;
+}
+.menu li.Tools a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -640px;
+}
+.menu li.Vehicles a {
+	background: url(../images/sprite-top-product-nav-icons.png) no-repeat left -680px;
+}
+

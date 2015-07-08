@@ -1,0 +1,49 @@
+/** Simple modifications needed for DropDownCheckList to take advantage of ThemeRoller settings */
+.ui-dropdownchecklist .ui-widget-content
+, .ui-dropdownchecklist .ui-widget-header {
+	box-shadow:0px 5px 5px #666;
+	max-height:224px !important
+}
+.ui-dropdownchecklist-indent {
+	padding-left: 7px;
+}
+/* Font size of 0 on the -selector and an explicit medium on -text required to eliminate 
+   descender problems within the containers and still have a valid size for the text */
+.ui-dropdownchecklist-selector-wrapper
+, .ui-widget.ui-dropdownchecklist-selector-wrapper {
+	vertical-align: middle;
+	font-size: 0px;
+}
+.ui-dropdownchecklist-selector {
+	padding: 5px;
+	font-size: 0px;
+	border:solid 1px #ccc !important;
+	background:url(../../images/select-arrow.png) right center no-repeat;
+}
+.ui-dropdownchecklist-text {
+	font-size: 12px;
+	font-family:'Tahoma', Arial, Helvetica, sans-serif;
+}
+.ui-dropdownchecklist-item
+, .ui-dropdownchecklist-item input {
+    vertical-align: middle;
+}
+.ui-dropdownchecklist-group {
+	padding: 1px 2px 2px 2px;
+}
+.ui-widget input[type="radio"] {
+	display: none;
+}
+
+td.category-dropdown  .ui-dropdownchecklist-item .ui-dropdownchecklist-text, td.product-dropdown  .ui-dropdownchecklist-item .ui-dropdownchecklist-text {
+	padding-left: 5px;
+}
+
+td.category-dropdown .ui-dropdownchecklist-selector-wrapper, .ui-widget.ui-dropdownchecklist-selector-wrapper,
+td.product-dropdown .ui-dropdownchecklist-selector-wrapper, .ui-widget.ui-dropdownchecklist-selector-wrapper {
+	margin-top: -5px;
+}
+
+.ui-dropdownchecklist {
+	z-index: 200 !important;
+}
